@@ -19,8 +19,8 @@ public class Baselib {
 
 public void setUp() throws MalformedURLException{
 	DesiredCapabilities caps = DesiredCapabilities.firefox();
-/*    caps.setCapability("platform", "Windows 7");
-    caps.setCapability("version", "51.0");*/
+    caps.setCapability("platform", "Windows 7");
+    caps.setCapability("version", "51.0");
     caps.setCapability("name","demo site");
     driver = new RemoteWebDriver(new URL(URL),caps);
 }
