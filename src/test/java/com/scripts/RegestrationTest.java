@@ -11,6 +11,7 @@ public class RegestrationTest extends Baselib{
 	public void register() throws Throwable{
 			
 	Registrationpo regpo=new Registrationpo(driver);
+	settings();
 	Thread.sleep(3000);
 	regpo.getEleFirstName().sendKeys("crowd");
 	regpo.getEleLastName().sendKeys("123");
