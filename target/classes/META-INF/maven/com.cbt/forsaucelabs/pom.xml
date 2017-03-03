@@ -11,6 +11,10 @@
         <version>2.19</version>
         <inherited>true</inherited>
         <configuration>
+        <parallel>classes
+        </parallel>
+        <threadCount>02</threadCount>
+        <redirectTestOutputToFile>true</redirectTestOutputToFile>
         <suiteXmlFiles>
         	<suiteXmlFile>testng.xml</suiteXmlFile>
         </suiteXmlFiles>
@@ -41,4 +45,5 @@
     <scope>test</scope>
   </dependency>
   </dependencies>
+  
 </project>
