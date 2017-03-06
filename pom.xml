@@ -16,7 +16,7 @@
         <threadCount>08</threadCount>
         <redirectTestOutputToFile>true</redirectTestOutputToFile>
         <suiteXmlFiles>
-        	<suiteXmlFile>testng.xml</suiteXmlFile>
+        	<suiteXmlFile>CrossBrowser.xml</suiteXmlFile>
         </suiteXmlFiles>
         </configuration>
        </plugin>
