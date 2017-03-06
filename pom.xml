@@ -13,7 +13,7 @@
         <configuration>
         <parallel>classes
         </parallel>
-        <threadCount>02</threadCount>
+        <threadCount>08</threadCount>
         <redirectTestOutputToFile>true</redirectTestOutputToFile>
         <suiteXmlFiles>
         	<suiteXmlFile>testng.xml</suiteXmlFile>

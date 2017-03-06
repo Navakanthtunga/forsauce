@@ -19,6 +19,7 @@ public class Baselib {
 	public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";*/
 @Parameters("browserName")
 @BeforeMethod
+<<<<<<< HEAD
 public void setUp(String browser) {
 		if(browser.equalsIgnoreCase("Firefox")){
 			
@@ -33,6 +34,12 @@ public void setUp(String browser) {
 		
 /*	DesiredCapabilities caps = DesiredCapabilities.firefox();
    caps.setCapability("platform", "Windows 7");
+=======
+
+public void setUp() throws MalformedURLException{
+	DesiredCapabilities caps = DesiredCapabilities.firefox();
+    caps.setCapability("platform", "Windows 7");
+>>>>>>> origin/master
     caps.setCapability("version", "51.0");
     caps.setCapability("name","demo site");
     driver = new RemoteWebDriver(new URL(URL),caps);*/
