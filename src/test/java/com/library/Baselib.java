@@ -1,26 +1,25 @@
 package com.library;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 public class Baselib {
 	public static WebDriver driver;
 	static public String sDirPath = System.getProperty("user.dir");
-/*	public static final String USERNAME = "navakanthtunga1258";
-	public static final String ACCESS_KEY = "c250c622-7bbc-4f1f-8fe0-0da2656b5e6d";
-	public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";*/
+	public static final String USERNAME = "shradhanjalidalal";
+	public static final String ACCESS_KEY = "4778fe48-9a83-4044-a236-0de35a9ab475";
+	public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
 @Parameters("browserName")
 @BeforeMethod
-<<<<<<< HEAD
-public void setUp(String browser) {
+/*public void setUp(String browser) {
 		if(browser.equalsIgnoreCase("Firefox")){
 			
 			
@@ -30,19 +29,13 @@ public void setUp(String browser) {
 		else if(browser.equalsIgnoreCase("Chrome")){
 			System.setProperty("webdriver.chrome.driver",sDirPath+"\\resources\\chromedriver.exe");
 			driver = new ChromeDriver();
-		}
-		
-/*	DesiredCapabilities caps = DesiredCapabilities.firefox();
-   caps.setCapability("platform", "Windows 7");
-=======
-
-public void setUp() throws MalformedURLException{
+		}*/
+public void setUp(String browser) throws Throwable {	
 	DesiredCapabilities caps = DesiredCapabilities.firefox();
-    caps.setCapability("platform", "Windows 7");
->>>>>>> origin/master
+   caps.setCapability("platform", "Windows 7");
     caps.setCapability("version", "51.0");
     caps.setCapability("name","demo site");
-    driver = new RemoteWebDriver(new URL(URL),caps);*/
+    driver = new RemoteWebDriver(new URL(URL),caps);
 }
 public void settings(){
 	//driver=new FirefoxDriver();
