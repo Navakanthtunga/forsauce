@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" group-by-instances="true">
+
+  <test name="firefox test" preserve-order="true">
+  <parameter name="browserName" value="firefox" />
+    <classes>
+      <class name="com.scripts.RegestrationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="chrome test" preserve-order="true">
+  <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.scripts.RegestrationTest"/>
+    </classes>
+    </test>
+    
+</suite> <!-- Suite -->

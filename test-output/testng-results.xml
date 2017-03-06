@@ -1,21 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20238" started-at="2017-03-03T10:05:28Z" finished-at="2017-03-03T10:05:49Z">
+  <suite name="Suite" duration-ms="23440" started-at="2017-03-03T13:59:49Z" finished-at="2017-03-03T14:00:12Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="20238" started-at="2017-03-03T10:05:28Z" finished-at="2017-03-03T10:05:49Z">
+    <test name="chrome test" duration-ms="20983" started-at="2017-03-03T13:59:49Z" finished-at="2017-03-03T14:00:10Z">
       <class name="com.scripts.RegestrationTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.scripts.RegestrationTest@724af044]" name="setup" is-config="true" duration-ms="10878" started-at="2017-03-03T15:35:28Z" finished-at="2017-03-03T15:35:39Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.scripts.RegestrationTest@2f686d1f]" name="setUp" is-config="true" duration-ms="3595" started-at="2017-03-03T19:29:49Z" finished-at="2017-03-03T19:29:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="register()[pri:0, instance:com.scripts.RegestrationTest@724af044]" name="register" duration-ms="9330" started-at="2017-03-03T15:35:39Z" finished-at="2017-03-03T15:35:49Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="register1()[pri:1, instance:com.scripts.RegestrationTest@2f686d1f]" name="register1" duration-ms="15803" started-at="2017-03-03T19:29:52Z" finished-at="2017-03-03T19:30:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register -->
+        </test-method> <!-- register1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.scripts.RegestrationTest@2f686d1f]" name="tearDown" is-config="true" duration-ms="1557" started-at="2017-03-03T19:30:08Z" finished-at="2017-03-03T19:30:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.scripts.RegestrationTest -->
-    </test> <!-- Test -->
+    </test> <!-- chrome test -->
+    <test name="firefox test" duration-ms="23440" started-at="2017-03-03T13:59:49Z" finished-at="2017-03-03T14:00:12Z">
+      <class name="com.scripts.RegestrationTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.scripts.RegestrationTest@1a968a59]" name="setUp" is-config="true" duration-ms="9831" started-at="2017-03-03T19:29:49Z" finished-at="2017-03-03T19:29:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="register1()[pri:1, instance:com.scripts.RegestrationTest@1a968a59]" name="register1" duration-ms="13579" started-at="2017-03-03T19:29:59Z" finished-at="2017-03-03T19:30:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.scripts.RegestrationTest@1a968a59]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-03-03T19:30:12Z" finished-at="2017-03-03T19:30:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.scripts.RegestrationTest -->
+    </test> <!-- firefox test -->
   </suite> <!-- Suite -->
 </testng-results>
