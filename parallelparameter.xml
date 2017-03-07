@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="tests" >
+
+  <test name="Chrome 1" >
+  <parameter name="browserName" value="chrome" />
+    <classes>
+      <class name="com.scripts.RegestrationTest2">
+      <!-- <methods>
+      <include name="register1"></include>
+      <exclude name="register2"></exclude>
+      </methods> -->
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="Chrome 2" >
+  <parameter name="browserName" value="chrome"/>
+    <classes>
+     <class name="com.scripts.RegestrationTest2">
+      <!-- <methods>
+      <include name="register2"></include>
+      <exclude name="register1"></exclude>
+      </methods> -->
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

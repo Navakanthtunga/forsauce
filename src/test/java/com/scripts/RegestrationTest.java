@@ -1,47 +1,28 @@
 package com.scripts;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.library.Baselib;
+import com.library.BaseLibold;
 import com.po.Registrationpo;
 
-public class RegestrationTest extends Baselib{
+public class RegestrationTest extends BaseLibold{
 
-	@Test(priority=1)
+	@Test
 	public void register1() throws Throwable{
 	try{
 	Registrationpo regpo=new Registrationpo(driver);
-	settings();
 	Thread.sleep(3000);
-	regpo.getEleFirstName().sendKeys("crowd");
+	settings();
+	regpo.getEleFirstName().sendKeys("crowd1");
 	regpo.getEleLastName().sendKeys("123");
 	regpo.getEleEmail().sendKeys("cbtcrowd508@gmail.com");
 	regpo.getElePhone().sendKeys("7894561236");
 	Thread.sleep(5000);
+	System.out.println("register1() in : "+Thread.currentThread().getId());
 	regpo.getEleSubmit().click();
-
 	}catch(Exception e){
 		e.printStackTrace();
 	}
 }
-	/*@Test(priority=2)
-	public void register2() throws Throwable{
-		try
-		{
-	Registrationpo regpo=new Registrationpo(driver);
-	regpo.settings();
-	Thread.sleep(3000);
-	regpo.getEleFirstName().sendKeys("crowd");
-	regpo.getEleLastName().sendKeys("123");
-	regpo.getEleEmail().sendKeys("cbtcrowd508@gmail.com");
-	regpo.getElePhone().sendKeys("7894561236");
-	Thread.sleep(5000);
-	regpo.getEleSubmit().click();
 
-		}catch(Exception e){
-			e.printStackTrace();
-		}
-}*/
-	
 }

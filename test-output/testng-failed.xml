@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test name="firefox test(failed)" parallel="tests">
-    <parameter name="browserName" value="firefox"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
       <class name="com.scripts.RegestrationTest">
         <methods>
           <include name="register1"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
         </methods>
       </class> <!-- com.scripts.RegestrationTest -->
     </classes>
-  </test> <!-- firefox test(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

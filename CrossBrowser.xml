@@ -6,6 +6,7 @@
   <parameter name="browserName" value="firefox" />
     <classes>
       <class name="com.scripts.RegestrationTest"/>
+      
     </classes>
   </test> <!-- Test -->
   

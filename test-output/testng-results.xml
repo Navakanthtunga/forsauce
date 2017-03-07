@@ -1,55 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="23440" started-at="2017-03-03T13:59:49Z" finished-at="2017-03-03T14:00:12Z">
+  <suite name="Suite" duration-ms="17455" started-at="2017-03-07T06:29:18Z" finished-at="2017-03-07T06:29:35Z">
     <groups>
     </groups>
-    <test name="chrome test" duration-ms="20983" started-at="2017-03-03T13:59:49Z" finished-at="2017-03-03T14:00:10Z">
+    <test name="Test" duration-ms="17455" started-at="2017-03-07T06:29:18Z" finished-at="2017-03-07T06:29:35Z">
       <class name="com.scripts.RegestrationTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.scripts.RegestrationTest@2f686d1f]" name="setUp" is-config="true" duration-ms="3595" started-at="2017-03-03T19:29:49Z" finished-at="2017-03-03T19:29:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.scripts.RegestrationTest@343f4d3d]" name="setUp" is-config="true" duration-ms="3442" started-at="2017-03-07T11:59:18Z" finished-at="2017-03-07T11:59:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="register1()[pri:1, instance:com.scripts.RegestrationTest@2f686d1f]" name="register1" duration-ms="15803" started-at="2017-03-03T19:29:52Z" finished-at="2017-03-03T19:30:08Z">
+        <test-method status="PASS" signature="register1()[pri:0, instance:com.scripts.RegestrationTest@343f4d3d]" name="register1" duration-ms="12832" started-at="2017-03-07T11:59:21Z" finished-at="2017-03-07T11:59:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.scripts.RegestrationTest@2f686d1f]" name="tearDown" is-config="true" duration-ms="1557" started-at="2017-03-03T19:30:08Z" finished-at="2017-03-03T19:30:10Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.scripts.RegestrationTest@343f4d3d]" name="close" is-config="true" duration-ms="1145" started-at="2017-03-07T11:59:34Z" finished-at="2017-03-07T11:59:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- close -->
       </class> <!-- com.scripts.RegestrationTest -->
-    </test> <!-- chrome test -->
-    <test name="firefox test" duration-ms="23440" started-at="2017-03-03T13:59:49Z" finished-at="2017-03-03T14:00:12Z">
-      <class name="com.scripts.RegestrationTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.scripts.RegestrationTest@1a968a59]" name="setUp" is-config="true" duration-ms="9831" started-at="2017-03-03T19:29:49Z" finished-at="2017-03-03T19:29:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="register1()[pri:1, instance:com.scripts.RegestrationTest@1a968a59]" name="register1" duration-ms="13579" started-at="2017-03-03T19:29:59Z" finished-at="2017-03-03T19:30:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.scripts.RegestrationTest@1a968a59]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-03-03T19:30:12Z" finished-at="2017-03-03T19:30:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.scripts.RegestrationTest -->
-    </test> <!-- firefox test -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
